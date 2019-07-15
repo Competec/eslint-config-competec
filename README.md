@@ -4,23 +4,23 @@ Competec ESLint Rules
 
 ## Installation
 
-You'll first need to install [ESLint](http://eslint.org):
+You'll first need to install [ESLint](http://eslint.org) with yarn:
 
 ```
 $ yarn add eslint --dev
 ```
-
+or NPM:
 
 ```
 $ npm i eslint --save-dev
 ```
 
-Next, install `@competec/eslint-config-competec`:
+Next, install `@competec/eslint-config-competec` with yarn:
 
 ```
 $ yarn add @competec/eslint-config-competec --dev
 ```
-
+or NPM:
 
 ```
 $ npm i @competec/eslint-config-competec --save-dev
