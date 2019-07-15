@@ -1,6 +1,6 @@
 {
   "name": "@competec/eslint-config-competec",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Competec ESLint Rules",
   "keywords": [
     "eslint",
@@ -9,7 +9,8 @@
     "competec"
   ],
   "files": [
-    "index.js"
+    "index.js",
+    "react.js"
   ],
   "author": "Raphael Haettich / Competec",
   "main": "index.js",
