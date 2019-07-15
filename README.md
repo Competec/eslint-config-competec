@@ -10,10 +10,10 @@ You'll first need to install [ESLint](http://eslint.org):
 $ yarn add eslint --dev
 ```
 
-Next, install `eslint-config-competec`:
+Next, install `@competec/eslint-config-competec`:
 
 ```
-$ yarn add eslint-config-competec --dev
+$ yarn add npm i @competec/eslint-config-competec --dev
 ```
 
 ## Usage
