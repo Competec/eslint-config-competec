@@ -13,7 +13,7 @@ $ yarn add eslint --dev
 Next, install `@competec/eslint-config-competec`:
 
 ```
-$ yarn add npm i @competec/eslint-config-competec --dev
+$ yarn add @competec/eslint-config-competec --dev
 ```
 
 ## Usage
