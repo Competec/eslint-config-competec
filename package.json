@@ -1,0 +1,21 @@
+{
+  "name": "eslint-config-competec",
+  "version": "0.0.1",
+  "description": "Competec ESLint Rules",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "competec"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "author": "Raphael Haettich / Competec",
+  "main": "index.js",
+  "peerDependencies": {
+    "eslint": "~3.0.1",
+    "babel-eslint": "^7.2.3"
+  },
+  "license": "MIT"
+}
