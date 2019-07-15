@@ -7,13 +7,13 @@ Competec ESLint Rules
 You'll first need to install [ESLint](http://eslint.org):
 
 ```
-$ npm i eslint --save-dev
+$ yarn add eslint --dev
 ```
 
 Next, install `eslint-config-competec`:
 
 ```
-$ npm install eslint-config-competec --save-dev
+$ yarn add eslint-config-competec --dev
 ```
 
 ## Usage
