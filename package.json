@@ -10,7 +10,8 @@
   ],
   "files": [
     "index.js",
-    "react.js"
+    "react.js",
+    "test.js"
   ],
   "author": "Raphael Haettich / Competec",
   "main": "index.js",
