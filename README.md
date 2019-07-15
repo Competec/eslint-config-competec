@@ -23,7 +23,27 @@ Create a file named .eslintrc.json with following contents in the root folder of
 ```json
 {
     "extends": [
-        "competec"
+        "@competec/eslint-config-competec"
+    ]
+}
+```
+
+If you want to use the config for your Reactapp, change it to the following:
+
+```json
+{
+    "extends": [
+        "@competec/eslint-config-competec/react"
+    ]
+}
+```
+
+Or for the use in tests to:
+
+```json
+{
+    "extends": [
+        "@competec/eslint-config-competec/test"
     ]
 }
 ```
