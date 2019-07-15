@@ -34,7 +34,8 @@
     "eslint-plugin-react-hooks": "1.x"
   },
   "scripts": {
-    "lint": "eslint *.js"
+    "lint": "eslint *.js",
+    "lint-fix": "eslint *.js --fix"
   },
   "repository": {
     "type": "git",
