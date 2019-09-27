@@ -1,3 +1,5 @@
+## MOVED TO https://gitlab.com/competec-ch/frontend/eslint-config-competec
+
 # eslint-config-competec
 
 Competec ESLint Rules
