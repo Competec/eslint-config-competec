@@ -39,10 +39,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Competec/eslint-config-competec.git"
+    "url": "git@gitlab.com:competec-ch/frontend/eslint-config-competec.git"
   },
   "bugs": {
-    "url": "https://github.com/Competec/eslint-config-competec/issues"
+    "url": "https://gitlab.com/competec-ch/frontend/eslint-config-competec/issues"
   },
-  "homepage": "https://github.com/Competec/eslint-config-competec#readme"
+  "homepage": "https://gitlab.com/competec-ch/frontend/eslint-config-competec#readme"
 }
