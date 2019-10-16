@@ -13,3 +13,11 @@ lint:
   script:
     - yarn install
     - yarn lint
+
+deploy:
+  image: node:latest
+  stage: deploy
+  only:
+    - master
+  script:
+    - npx semantic-release
