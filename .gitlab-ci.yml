@@ -20,4 +20,5 @@ deploy:
   only:
     - master
   script:
+    - git remote -v
     - npx semantic-release
