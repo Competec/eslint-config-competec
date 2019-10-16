@@ -1,3 +1,4 @@
+'use strict';
 module.exports = {
     globals: {
         logGlobalError: true,
@@ -11,5 +12,5 @@ module.exports = {
         secureObject: true,
         utag: true,
         TMSHelper: true,
-    }
+    },
 };

@@ -21,6 +21,6 @@ module.exports = {
         'eslint:recommended',
         './base.js',
         './globals.js',
-        './enviroments.js'
-    ]
+        './enviroment.js',
+    ],
 };
