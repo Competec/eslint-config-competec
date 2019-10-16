@@ -220,5 +220,5 @@ module.exports = {
         'prefer-spread': 1,
         'prefer-template': 1,
         'require-yield': 2,
-    }
+    },
 };
