@@ -1,3 +1,8 @@
+[![pipeline status](https://gitlab.com/competec-opensource/eslint-config-competec/badges/master/pipeline.svg)](https://gitlab.com/competec-opensource/eslint-config-competec/commits/master)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![NPM version](https://img.shields.io/npm/v/@competec/eslint-config-competec.svg?style=flat)](https://www.npmjs.com/package/@competec/eslint-config-competec)
+[![NPM downloads](https://img.shields.io/npm/dt/@competec/eslint-config-competec.svg?style=flat)](https://www.npmjs.com/package/@competec/eslint-config-competec)
+
 # eslint-config-competec
 
 Competec ESLint Rules
@@ -8,16 +13,12 @@ You'll first need to install [ESLint](http://eslint.org) with yarn:
 
 ```
 $ yarn add eslint --dev
-OR
-$ npm i eslint --save-dev
 ```
 
 Next, install `@competec/eslint-config-competec` with yarn:
 
 ```
 $ yarn add @competec/eslint-config-competec --dev
-OR
-$ npm i @competec/eslint-config-competec --save-dev
 ```
 
 ## Usage
@@ -51,3 +52,7 @@ Or for the use in tests to:
     ]
 }
 ```
+
+## Developer Information
+
+Please use the `yarn commit` command to add commit with the correct formatting.
