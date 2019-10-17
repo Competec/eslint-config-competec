@@ -38,7 +38,8 @@
   },
   "scripts": {
     "lint": "eslint *.js",
-    "lint-fix": "eslint *.js --fix"
+    "lint-fix": "eslint *.js --fix",
+    "commit": "sgc -s $(git rev-parse --abbrev-ref HEAD | grep -oP '.*((?:VOR|DEV|DO|SEARCH|SHOP3)-[0-9]+)' || echo $(git rev-parse --abbrev-ref HEAD))"
   },
   "repository": {
     "type": "git",
