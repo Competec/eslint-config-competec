@@ -8,16 +8,12 @@ You'll first need to install [ESLint](http://eslint.org) with yarn:
 
 ```
 $ yarn add eslint --dev
-OR
-$ npm i eslint --save-dev
 ```
 
 Next, install `@competec/eslint-config-competec` with yarn:
 
 ```
 $ yarn add @competec/eslint-config-competec --dev
-OR
-$ npm i @competec/eslint-config-competec --save-dev
 ```
 
 ## Usage
@@ -51,3 +47,7 @@ Or for the use in tests to:
     ]
 }
 ```
+
+## Developer Information
+
+Please use the `yarn commit` command to add commit with the correct formatting.
