@@ -1,6 +1,6 @@
 {
   "name": "@competec/eslint-config-competec",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Competec ESLint Rules",
   "keywords": [
     "eslint",
@@ -20,8 +20,13 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@semantic-release/git": "^7.0.16",
     "@semantic-release/gitlab": "^4.0.0",
     "eslint": "^6.3.0",
+    "husky": "^3.0.9",
+    "semantic-git-commit-cli": "^3.5.0",
     "semantic-release": "^15.13.24"
   },
   "dependencies": {
@@ -37,14 +42,20 @@
   },
   "scripts": {
     "lint": "eslint *.js",
-    "lint-fix": "eslint *.js --fix"
+    "lint-fix": "eslint *.js --fix",
+    "commit": "sgc -s $(git rev-parse --abbrev-ref HEAD | grep -oP '.*((?:VOR|DEV|DO|SEARCH|SHOP3)-[0-9]+)' || echo $(git rev-parse --abbrev-ref HEAD))"
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.com:competec-ch/frontend/eslint-config-competec.git"
+    "url": "git@gitlab.com:competec-opensource/eslint-config-competec.git"
   },
   "bugs": {
-    "url": "https://gitlab.com/competec-ch/frontend/eslint-config-competec/issues"
+    "url": "https://gitlab.com:competec-opensource/eslint-config-competec/issues"
   },
-  "homepage": "https://gitlab.com/competec-ch/frontend/eslint-config-competec#readme"
+  "homepage": "https://gitlab.com:competec-opensource/eslint-config-competec#readme",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
 }
