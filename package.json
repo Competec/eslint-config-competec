@@ -43,7 +43,7 @@
   "scripts": {
     "lint": "eslint *.js",
     "lint-fix": "eslint *.js --fix",
-    "commit": "sgc -s $(git rev-parse --abbrev-ref HEAD | grep -oP '.*((?:VOR|DEV|DO|SEARCH|SHOP3)-[0-9]+)' || echo $(git rev-parse --abbrev-ref HEAD))"
+    "commit": "BRANCH=$(git rev-parse --abbrev-ref HEAD | grep -oP '.*((?:VOR|DEV|DO|SEARCH|SHOP3)-[0-9]+)' || git rev-parse --abbrev-ref HEAD);sgc -s $(echo $BRANCH | sed -r \"s/\\x1B\\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g\")"
   },
   "repository": {
     "type": "git",
