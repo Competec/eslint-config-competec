@@ -3,6 +3,7 @@
  * @author Jason Dimitratos/ Competec
  */
 'use strict';
+
 module.exports = {
     rules: {
         // Possible errors
@@ -219,5 +220,5 @@ module.exports = {
         'prefer-spread': 1,
         'prefer-template': 1,
         'require-yield': 2,
-    },
+    }
 };
