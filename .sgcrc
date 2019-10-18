@@ -1,4 +1,5 @@
 {
     "body": false,
-    "emoji": true
+    "addScopeSpace": false,
+    "lowercaseTypes": true
 }
