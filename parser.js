@@ -9,5 +9,5 @@ module.exports = {
         ecmaVersion: 8,
         sourceType: 'script',
     },
-},
+};
 
