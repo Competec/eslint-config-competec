@@ -135,7 +135,6 @@ module.exports = {
         'array-element-newline': ['off', {multiline: true, minItems: 3}],
         'block-spacing': ['warn', 'always'],
         'brace-style': ['error', '1tbs', {allowSingleLine: false}],
-        camelcase: 'off',
         'comma-dangle': ['warn', 'always-multiline'],
         'comma-spacing': ['error', {before: false, after: true}],
         'comma-style': ['error', 'last'],
