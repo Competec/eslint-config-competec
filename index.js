@@ -8,7 +8,6 @@
 // Config Definition
 //------------------------------------------------------------------------------
 
-
 module.exports = {
     extends: [
         'eslint:recommended',
