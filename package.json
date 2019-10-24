@@ -9,10 +9,11 @@
     "competec"
   ],
   "files": [
-    "src/*"
+    "src/*",
+    "index.js"
   ],
   "author": "Raphael Haettich / Competec",
-  "main": "src/index.js",
+  "main": "index.js",
   "peerDependencies": {
     "eslint": "6.x"
   },
