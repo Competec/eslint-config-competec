@@ -11,9 +11,9 @@
 module.exports = {
     extends: [
         'eslint:recommended',
-        './base.js',
-        './globals.js',
-        './parser.js',
-        './enviroment.js',
+        './src/base.js',
+        './src/globals.js',
+        './src/parser.js',
+        './src/environment.js',
     ],
 };

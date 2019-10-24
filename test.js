@@ -11,9 +11,9 @@
 
 module.exports = {
     extends: [
-        './base.js',
-        './enviroments.js',
-        './parser.js',
+        './src/base.js',
+        './src/environment.js',
+        './src/parser.js',
     ],
 
     globals: {

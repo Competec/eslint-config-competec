@@ -9,6 +9,7 @@
     "competec"
   ],
   "files": [
+    "src/*",
     "index.js",
     "react.js",
     "test.js"
