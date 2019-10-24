@@ -11,14 +11,14 @@
 
 module.exports = {
     extends: [
-        './base.js',
         'react-app',
+        './base.js',
     ],
 
     rules: {
-
         'jsx-quotes': ['warn', 'prefer-double'],
         'react/sort-comp': 'error',
+        'no-console': 'error',
         'react/prop-types': 'warn',
         'react/prefer-stateless-function': 'warn',
         'react/prefer-es6-class': ['error', 'always'],
