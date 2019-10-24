@@ -1,15 +1,21 @@
-image: node:latest
+image: node:12
 
 cache:
   paths:
     - node_modules/
 
+stages:
+  - test
+  - deploy
+
 lint:
+  stage: test
   script:
     - yarn
     - yarn lint
 
 deploy:
+  stage: deploy
   only:
     - master
   script:
