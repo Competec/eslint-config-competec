@@ -12,7 +12,7 @@
 module.exports = {
     extends: [
         'react-app',
-        './base.js',
+        './src/base.js',
     ],
 
     rules: {

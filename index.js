@@ -1,9 +1,19 @@
 /**
  * @fileoverview Competec ESLint Config
- * @author Raphael Haettich / Jason Dimitratos / Competec
+ * @author Raphael Haettich / Competec
  */
-import index from './src/index';
-export test from './src/test';
-export react from './src/react';
+'use strict';
 
-export default index;
+//------------------------------------------------------------------------------
+// Config Definition
+//------------------------------------------------------------------------------
+
+module.exports = {
+    extends: [
+        'eslint:recommended',
+        './src/base.js',
+        './src/globals.js',
+        './src/parser.js',
+        './src/environment.js',
+    ],
+};
