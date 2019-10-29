@@ -15,5 +15,6 @@ module.exports = {
         './src/globals.js',
         './src/parser.js',
         './src/environment.js',
+        './src/flow.js',
     ],
 };
