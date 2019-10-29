@@ -30,7 +30,7 @@ module.exports = {
             2,
             'always',
             {
-                'annotateUndefined': 'never'
+                annotateUndefined: 'never',
             },
         ],
         'flowtype/require-valid-file-annotation': 2,
@@ -62,8 +62,8 @@ module.exports = {
         'flowtype/valid-syntax': 1,
     },
     settings: {
-        'flowtype': {
-            'onlyFilesWithFlowAnnotation': false,
+        flowtype: {
+            onlyFilesWithFlowAnnotation: false,
         },
     },
 };
