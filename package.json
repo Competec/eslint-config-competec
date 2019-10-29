@@ -12,6 +12,7 @@
     "src/*",
     "index.js",
     "react.js",
+    "flow.js",
     "test.js"
   ],
   "author": "Raphael Haettich / Competec",

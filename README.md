@@ -33,7 +33,7 @@ Create a file named .eslintrc.json with following contents in the root folder of
 }
 ```
 
-If you want to use the config for your Reactapp, change it to the following:
+For the use with react, change it to the following:
 
 ```json
 {
@@ -42,8 +42,17 @@ If you want to use the config for your Reactapp, change it to the following:
     ]
 }
 ```
+For the use with flow, change it to the following:
 
-Or for the use in tests to:
+```json
+{
+    "extends": [
+        "@competec/eslint-config-competec/flow"
+    ]
+}
+```
+
+For the use in tests, change it to the following:
 
 ```json
 {
