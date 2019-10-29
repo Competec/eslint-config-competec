@@ -42,6 +42,15 @@ If you want to use the config for your Reactapp, change it to the following:
     ]
 }
 ```
+If you want to use the config for your app that uses Flow for type check, change it to the following:
+
+```json
+{
+    "extends": [
+        "@competec/eslint-config-competec/flow"
+    ]
+}
+```
 
 Or for the use in tests to:
 
