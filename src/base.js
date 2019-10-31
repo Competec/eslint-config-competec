@@ -151,7 +151,7 @@ module.exports = {
         'keyword-spacing': ['warn', {before: true, after: true}],
         'linebreak-style': ['error', 'unix'],
         'lines-around-comment': 'off',
-        'max-len': ['warn', 180, {ignoreUrls: true}],
+        'max-len': ['warn', 180, {ignoreUrls: true, ignorePattern: '^(<svg.|<path)*'}],
         'max-nested-callbacks': 'off',
         'max-params': 'off',
         'max-statements-per-line': ['error', {max: 1}],
