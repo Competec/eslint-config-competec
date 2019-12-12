@@ -1,8 +1,6 @@
 name: test + publish
 
-on:
-  release:
-    types: [created]
+on: [push]
 
 jobs:
   test:
@@ -16,6 +14,7 @@ jobs:
       - run: yarn lint
 
   publish-npm:
+    if: contains(github.ref, 'master')
     needs: test
     runs-on: ubuntu-latest
     steps:
