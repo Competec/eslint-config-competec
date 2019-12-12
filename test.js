@@ -10,7 +10,11 @@
 
 
 module.exports = {
-    extends: './index.js',
+    extends: [
+        './src/base.js',
+        './src/environment.js',
+        './src/parser.js',
+    ],
 
     globals: {
         logGlobalError: true,
