@@ -23,5 +23,6 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
+      - run: export GITHUB_TOKEN=${{secrets.GITHUB_TOKEN}} 
       - run: yarn
       - run: npx semantic-release
