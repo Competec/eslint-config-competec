@@ -10,33 +10,20 @@
 
 
 module.exports = {
+    plugins: [
+        'jsx-a11y',
+    ],
+
     extends: [
-        './index.js',
+        'plugin:jsx-a11y/recommended',
         'react-app',
+        './src/base.js',
     ],
 
     rules: {
-        quotes: ['warn', 'single'],
-        camelcase: 'off',
-        'no-case-declarations': 'off',
-        indent: ['warn', 4, {SwitchCase: 1}],
-        'func-style': 'off',
-        'no-extra-semi': 'warn',
-        'no-debugger': 'warn',
-        'no-process-env': 'off',
-        'comma-dangle': ['warn', 'always-multiline'],
-        'no-extra-parens': [
-            'warn',
-            'all',
-            {
-                conditionalAssign: false,
-                nestedBinaryExpressions: false,
-                returnAssign: false,
-                ignoreJSX: 'all',
-            },
-        ],
         'jsx-quotes': ['warn', 'prefer-double'],
         'react/sort-comp': 'error',
+        'no-console': 'error',
         'react/prop-types': 'warn',
         'react/prefer-stateless-function': 'warn',
         'react/prefer-es6-class': ['error', 'always'],

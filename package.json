@@ -1,6 +1,6 @@
 {
   "name": "@competec/eslint-config-competec",
-  "version": "1.2.1",
+  "version": "2.4.0",
   "description": "Competec ESLint Rules",
   "keywords": [
     "eslint",
@@ -9,8 +9,10 @@
     "competec"
   ],
   "files": [
+    "src/*",
     "index.js",
     "react.js",
+    "flow.js",
     "test.js"
   ],
   "author": "Raphael Haettich / Competec",
@@ -20,7 +22,14 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^6.3.0"
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@semantic-release/git": "^7.0.16",
+    "@semantic-release/gitlab": "^4.0.0",
+    "eslint": "^6.3.0",
+    "husky": "^3.0.9",
+    "semantic-git-commit-cli": "^3.5.0",
+    "semantic-release": "^15.13.24"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.1.0",
@@ -35,14 +44,21 @@
   },
   "scripts": {
     "lint": "eslint *.js",
-    "lint-fix": "eslint *.js --fix"
+    "lint-fix": "eslint *.js --fix",
+    "commit": "BRANCH=$(git rev-parse --abbrev-ref HEAD | grep -oP '.*((?:VOR|DEV|DO|SEARCH|SHOP3)-[0-9]+)' || git rev-parse --abbrev-ref HEAD);sgc -s $(echo $BRANCH | sed -r \"s/\\x1B\\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g\")",
+    "gbc": "git add . && yarn commit"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Competec/eslint-config-competec.git"
+    "url": "git@gitlab.com:competec-opensource/eslint-config-competec.git"
   },
   "bugs": {
-    "url": "https://github.com/Competec/eslint-config-competec/issues"
+    "url": "https://gitlab.com:competec-opensource/eslint-config-competec/issues"
   },
-  "homepage": "https://github.com/Competec/eslint-config-competec#readme"
+  "homepage": "https://gitlab.com:competec-opensource/eslint-config-competec#readme",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
 }
