@@ -23,4 +23,5 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
+      - run: yarn
       - run: npx semantic-release
