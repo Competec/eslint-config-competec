@@ -65,3 +65,4 @@ For the use in tests, change it to the following:
 ## Developer Information
 
 Please use the `yarn commit` command to add commit with the correct formatting.
+
