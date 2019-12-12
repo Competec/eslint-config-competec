@@ -23,6 +23,7 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
+          token: ${{ secrets.NPM_TOKEN }}
       - run: yarn
       - run: npx semantic-release
         env:
