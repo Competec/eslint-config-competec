@@ -27,9 +27,9 @@
     "@semantic-release/git": "^7.0.18",
     "@semantic-release/github": "^5.5.5",
     "eslint": "^6.3.0",
-    "husky": "^3.0.9",
-    "semantic-git-commit-cli": "^3.5.0",
-    "semantic-release": "^15.13.24"
+    "husky": "^4.2.5",
+    "semantic-git-commit-cli": "^3.6.0",
+    "semantic-release": "^17.0.7"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.1.0",
@@ -43,6 +43,7 @@
     "eslint-plugin-react-hooks": "^2.0.1"
   },
   "scripts": {
+    "reset": "rm -rf ./node_modules && yarn",
     "lint": "eslint *.js",
     "lint-fix": "eslint *.js --fix",
     "commit": "BRANCH=$(git rev-parse --abbrev-ref HEAD | grep -oP '.*((?:VOR|DEV|DO|SEARCH|SHOP3)-[0-9]+)' || git rev-parse --abbrev-ref HEAD);sgc -s $(echo $BRANCH | sed -r \"s/\\x1B\\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g\")",
