@@ -40,8 +40,8 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           token: ${{ secrets.GH_TOKEN }}
       - run: |
-          git config --global user.name 'devdepcomp'
-          git config --global user.email 'devdepcomp@users.noreply.github.com'
+          git config --global user.name 'competec-mgw-bot'
+          git config --global user.email 'competec-mgw-bot@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git checkout "${GITHUB_REF:11}"
           git pull
