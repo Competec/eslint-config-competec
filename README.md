@@ -42,6 +42,16 @@ For the use with react, change it to the following:
     ]
 }
 ```
+
+For the use with typescript, change it to the following:
+
+```json
+{
+    "extends": [
+        "@competec/eslint-config-competec/typescript"
+    ]
+}
+```
 For the use with flow, change it to the following:
 
 ```json
