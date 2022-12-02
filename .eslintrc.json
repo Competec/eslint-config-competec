@@ -1,6 +1,3 @@
 {
-    "extends": "./index.js",
-    "files": [
-        "src/**/*.js"
-    ]
+    "extends": "./index.js"
 }
