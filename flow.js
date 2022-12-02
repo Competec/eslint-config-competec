@@ -1,6 +1,8 @@
-'use strict';
-
 module.exports = {
+    files: [
+        '*.js',
+        '*.jsx',
+    ],
     rules: {
         'unicode-bom': ['error', 'never'],
         'flowtype/boolean-style': [

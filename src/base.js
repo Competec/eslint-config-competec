@@ -2,7 +2,6 @@
  * @fileoverview Competec ESLint Config
  * @author Jason Dimitratos/ Competec
  */
-'use strict';
 
 module.exports = {
     rules: {
@@ -100,6 +99,21 @@ module.exports = {
         'vars-on-top': 'off',
         'wrap-iife': ['error', 'outside'],
         yoda: ['error', 'never'],
+        'import/order': [
+            'error',
+            {
+                'groups': [
+                    'builtin',
+                    'external',
+                    'internal',
+                    'parent',
+                    'sibling',
+                    'index',
+                    'object',
+                    'type',
+                ],
+            }
+        ],
 
         // Strict Mode
         strict: ['error', 'safe'],

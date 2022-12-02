@@ -1,7 +1,6 @@
 /**
  * @fileoverview Competec ESLint Config for Typescript Apps
  */
-'use strict';
 
 //------------------------------------------------------------------------------
 // Config Definition
@@ -33,5 +32,9 @@ module.exports = {
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/member-delimiter-style': 'off',
         '@typescript-eslint/ban-ts-ignore': 'off',
+    },
+    settings: {
+        typescript: true,
+        node: true,
     },
 };
