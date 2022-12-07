@@ -1,6 +1,6 @@
 {
   "name": "@competec/eslint-config-competec",
-  "version": "2.5.0",
+  "version": "3.0.0",
   "description": "Competec ESLint Rules",
   "keywords": [
     "eslint",
@@ -12,6 +12,7 @@
     "src/*",
     "index.js",
     "react.js",
+    "typescript.js",
     "flow.js",
     "test.js"
   ],
@@ -26,21 +27,25 @@
     "@commitlint/config-conventional": "^8.2.0",
     "@semantic-release/git": "^7.0.18",
     "@semantic-release/github": "^5.5.5",
-    "eslint": "^6.3.0",
+    "eslint": "^8.28.0",
     "husky": "^4.2.5",
     "semantic-git-commit-cli": "^3.6.0",
     "semantic-release": "^17.0.7"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.1.0",
-    "@typescript-eslint/parser": "2.1.0",
-    "babel-eslint": "^10.0.3",
-    "eslint-config-react-app": "^5.0.1",
-    "eslint-plugin-flowtype": "^4.3.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-hooks": "^2.0.1"
+    "@babel/core": "^7.20.5",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-plugin-flowtype": "^4.7.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^2.5.1"
   },
   "scripts": {
     "reset": "rm -rf ./node_modules && yarn",

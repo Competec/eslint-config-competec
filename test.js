@@ -2,7 +2,6 @@
  * @fileoverview Competec ESLint Config for Tests
  * @author Raphael Haettich / Competec
  */
-'use strict';
 
 //------------------------------------------------------------------------------
 // Config Definition

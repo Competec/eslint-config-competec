@@ -2,13 +2,15 @@
  * @fileoverview Competec ESLint Config
  * @author Raphael Haettich / Competec
  */
-'use strict';
 
 //------------------------------------------------------------------------------
 // Config Definition
 //------------------------------------------------------------------------------
 
 module.exports = {
+    plugins: [
+        'import',
+    ],
     extends: [
         'eslint:recommended',
         './src/base.js',
