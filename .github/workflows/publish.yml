@@ -13,23 +13,24 @@ jobs:
       - run: yarn
       - run: yarn lint
 
-  # publish-npm:
-  #   if: contains(github.ref, 'master')
-  #   needs: test
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v1
-  #     - uses: actions/setup-node@v1
-  #       with:
-  #         node-version: 16
-  #     - run: yarn
-  #     - run: npx semantic-release
-  #       env:
-  #         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-  #         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+  publish-npm:
+    if: contains(github.ref, 'master')
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - run: yarn
+      - run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   publish-github-package:
     if: contains(github.ref, 'master')
+    needs: publish-npm
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -44,7 +45,7 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git checkout "${GITHUB_REF:11}"
           git pull
-          npm publish
+          if [[ "$(git log -1 --pretty=%B)" =~ "chore(RELEASE):" ]]; then npm publish; fi
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
