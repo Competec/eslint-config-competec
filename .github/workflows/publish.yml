@@ -13,20 +13,20 @@ jobs:
       - run: yarn
       - run: yarn lint
 
-  publish-npm:
-    if: contains(github.ref, 'master')
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 16
-      - run: yarn
-      - run: npx semantic-release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+  # publish-npm:
+  #   if: contains(github.ref, 'master')
+  #   needs: test
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v1
+  #     - uses: actions/setup-node@v1
+  #       with:
+  #         node-version: 16
+  #     - run: yarn
+  #     - run: npx semantic-release
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+  #         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   publish-github-package:
     if: contains(github.ref, 'master')
