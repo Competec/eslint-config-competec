@@ -30,7 +30,6 @@ jobs:
 
   publish-github-package:
     if: contains(github.ref, 'master')
-    needs: publish-npm
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
