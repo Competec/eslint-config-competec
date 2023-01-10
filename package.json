@@ -16,7 +16,7 @@
     "flow.js",
     "test.js"
   ],
-  "author": "Raphael Haettich / Competec",
+  "author": "Raphael Hättich / Competec",
   "main": "index.js",
   "peerDependencies": {
     "eslint": "8.x"
