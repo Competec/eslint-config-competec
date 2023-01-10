@@ -25,10 +25,10 @@
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
-    "@semantic-release/git": "^7.0.18",
-    "@semantic-release/github": "^5.5.5",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.4",
     "eslint": "^8.28.0",
-    "husky": "^4.2.5",
     "semantic-git-commit-cli": "^3.6.0",
     "semantic-release": "^17.0.7"
   },
@@ -62,9 +62,8 @@
     "url": "https://github.com/Competec/eslint-config-competec/issues"
   },
   "homepage": "https://github.com/Competec/eslint-config-competec/issues#readme",
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
