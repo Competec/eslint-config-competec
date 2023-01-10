@@ -19,7 +19,7 @@
   "author": "Raphael Haettich / Competec",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "6.x"
+    "eslint": "8.x"
   },
   "license": "MIT",
   "devDependencies": {
