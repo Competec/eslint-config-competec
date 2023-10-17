@@ -6,6 +6,9 @@ module.exports = {
                 '*.jsx',
             ],
             rules: {
+                'no-undef': 'off',
+                'import/no-named-as-default': 'off',
+
                 'unicode-bom': ['error', 'never'],
                 'flowtype/boolean-style': [
                     2,
