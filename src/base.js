@@ -99,6 +99,21 @@ module.exports = {
         'vars-on-top': 'off',
         'wrap-iife': ['error', 'outside'],
         yoda: ['error', 'never'],
+        'import/order': [
+            'error',
+            {
+                'groups': [
+                    'builtin',
+                    'external',
+                    'internal',
+                    'parent',
+                    'sibling',
+                    'index',
+                    'object',
+                    'type',
+                ],
+            }
+        ],
 
         // Strict Mode
         strict: ['error', 'safe'],
@@ -204,6 +219,7 @@ module.exports = {
         'require-jsdoc': 'off',
         semi: ['error', 'always'],
         'semi-spacing': 'error',
+        'sort-imports': 'off',
         'sort-vars': 'off',
         'space-before-blocks': ['error', 'always'],
         'space-before-function-paren': ['error', {anonymous: 'never', named: 'never'}],
@@ -235,10 +251,5 @@ module.exports = {
         'prefer-spread': 1,
         'prefer-template': 1,
         'require-yield': 2,
-
-        // Disabled due to incorrect errors https://typescript-eslint.io/rules/no-use-before-define/#how-to-use
-        'no-use-before-define': 'off',
-
-        'import/no-anonymous-default-export': 'off',
     },
 };
