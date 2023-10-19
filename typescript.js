@@ -65,6 +65,13 @@ module.exports = {
                 'no-shadow': 'off',
                 '@typescript-eslint/no-shadow': 'error',
 
+                'import/no-unused-modules': 'off',
+                'import/named': 'off',
+                'import/namespace': 'off',
+                'import/default': 'off',
+
+                'import/newline-after-import': 'error',
+
                 'import/order': [
                     'error',
                     {
@@ -78,21 +85,6 @@ module.exports = {
                                 group: 'builtin',
                                 position: 'before',
                             },
-                            {
-                                pattern: '{jest-axe,enzyme,react-dom/test-utils}',
-                                group: 'builtin',
-                                position: 'after',
-                            },
-                            {
-                                pattern: '*storybook*',
-                                group: 'builtin',
-                                position: 'after',
-                            },
-                            {
-                                pattern: '{@competec/**,b2c-components/**,b2c-resources/**}',
-                                group: 'external',
-                                position: 'after',
-                            },
                         ],
                         pathGroupsExcludedImportTypes: [],
                         groups: [
@@ -105,7 +97,6 @@ module.exports = {
                         ],
                     },
                 ],
-                'import/newline-after-import': 'error',
             },
         },
     ],
