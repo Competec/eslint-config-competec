@@ -55,8 +55,8 @@ module.exports = {
 
                 '@typescript-eslint/no-import-type-side-effects': 'error',
 
-                'no-unused-vars': 'off',
-                '@typescript-eslint/no-unused-vars': 'off',
+                'no-unused-vars': 'error',
+                '@typescript-eslint/no-unused-vars': 'error',
 
                 // needs to be removed in the future: https://stackoverflow.com/questions/64170868/why-eslint-consider-jsx-or-some-react-types-undefined-since-upgrade-typescript
                 'no-undef': 'off',
@@ -65,7 +65,7 @@ module.exports = {
                 'no-shadow': 'off',
                 '@typescript-eslint/no-shadow': 'error',
 
-                'import/no-unused-modules': 'off',
+                'import/no-unused-modules': 'error',
                 'import/named': 'off',
                 'import/namespace': 'off',
                 'import/default': 'off',
